@@ -9,6 +9,10 @@
         <title>Upload Successful to MongoDB GridFS</title>
     </head>
     <body>
-        <p>Upload successful to MongoDB GridFS. SSH into your instance and run mongofiles -l -d gridfs</p>
+        <p>Upload successful to MongoDB GridFS. SSH into your instance and run 
+        <code>
+        mongofiles -d gridfs list -u $OPENSHIFT_MONGODB_DB_USERNAME -p $OPENSHIFT_MONGODB_DB_PASSWORD -h $OPENSHIFT_MONGODB_DB_HOST -port $OPENSHIFT_MONGODB_DB_PORT
+        </code>
+        </p>
     </body>
 </html>
